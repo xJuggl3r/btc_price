@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4">
+      <h3>Bitcoin Price</h3>
+      <p>USD: ${{ bitcoin_usd_price|floatformat:2 }}</p>
+      <p>BRL: R$ {{ bitcoin_brl_price|floatformat:2 }}</p>
+    </div>
+    <div class="col-4">
+      <h3>Ethereum Price</h3>
+      <p>USD: ${{ ethereum_usd_price|floatformat:2 }}</p>
+      <p>BRL: R$ {{ ethereum_brl_price|floatformat:2 }}</p>
+    </div>
+    <div class="col-4">
+      <h3>Litecoin Price</h3>
+      <p>USD: ${{ litecoin_usd_price|floatformat:2 }}</p>
+      <p>BRL: R$ {{ litecoin_brl_price|floatformat:2 }}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
